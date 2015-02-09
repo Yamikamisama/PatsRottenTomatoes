@@ -1,0 +1,99 @@
+.container {
+    width: 20%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+#wrapper {
+    text-align: center;
+}
+#fav_wrapper {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+img {
+    border: 2px solid black;
+}
+h1 {
+    font-size: 3em;
+    padding: 6.5% 0 2.5% 0;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    -webkit-text-fill-color: black;
+    text-fill-color: red;
+    -webkit-text-stroke: .05px white;
+    text-stroke: 3px white;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+td {
+    margin: 0;
+}
+th {
+    color: white;
+    padding: 10px;
+}
+p {
+    font-size: .8em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+body {
+    background-image: url('../movie-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+td a, td a p, p a {
+    color: rgb(123, 123, 123);
+    text-decoration: none;
+    width: 112px;
+}
+a:visited {
+    color: white;
+}
+tr:hover {
+    background-color: rgb(63, 63, 63);
+}
+#star {
+    border: none;
+}
+.favorite_button {
+    background-color: black;
+    color: white;
+    padding: 7%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+    border: 3px solid white;
+}
+.favorite_button:hover {
+    color: black;
+    background-color: gold;
+    transition: background-color 300ms linear;
+}
+.favorited_button {
+    background-color: gold;
+    color: black;
+    padding: 7%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+    border: 3px solid black;
+}
+.grey {
+    color: rgb(171, 169, 169);
+    padding: 0 1%;
+}
+#past_filters p a, #past_filters p a:visited {
+    color: white;
+}
+.spacer {
+    padding: 0 1%;
+}
+.filter_form {
+    margin-top: 3%;
+    display: none;
+}
+.filter_form table {
+    margin: 0 auto;
+}

@@ -1,0 +1,17 @@
+<div id="wrapper">
+	<%=erb :"filter/_filter_form"  %>
+	<h1>YOUR PAST FILTERS</h1>
+	<div id="past_filters">
+		<% @filters.each_with_index do |f, index| %>
+			<p>
+				<a href="/filter/<%=f.release_date%>/<%= f.critic_rating%>">
+					<%= index +1 %>)
+					<span class="spacer">Release Date Minimum:</span>
+					<%=f.release_date%>
+					<span class="spacer">Critics Rating Minimum:</span>
+					<%= f.critic_rating%>
+				</a>
+			</p>
+		<% end %>
+	</div>
+</div>

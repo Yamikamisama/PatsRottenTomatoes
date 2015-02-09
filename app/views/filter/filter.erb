@@ -1,0 +1,22 @@
+<div id="wrapper">
+	<%=erb :"filter/_filter_form"  %>
+	<h1>FILTER RESULTS</h1>
+<table>
+	<tr>
+		<th></th>
+		<th class="title">TITLE</th>
+		<th>SYNOPSIS</th>
+		<th>RELEASE DATE</th>
+		<th>CRITICS SCORE</th>
+	<tr>
+	<% @holder.each do |movie| %>
+	<tr>
+		<td><img src="<%= movie.poster_thumbnail %>"></td>
+		<td><a class-"title" href="/movie/<%= movie.id %>"><p><%= movie.title %></p></a></td>
+		<td><p><%= movie.synopsis %></p></td>
+		<td><p><%= movie.release_date %></p></td>
+		<td><p><%= movie.critics_score %></p></td>
+	<tr>
+	<% end %>
+</table>
+</div>
