@@ -33,9 +33,9 @@ p {
     font-family: 'Source Sans Pro', sans-serif;
 }
 body {
-    background-image: url('../movie-bg.png');
+   /* background-image: url('../movie-bg.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 td a, td a p, p a {
     color: rgb(123, 123, 123);
