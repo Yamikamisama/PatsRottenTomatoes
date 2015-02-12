@@ -1,7 +1,9 @@
+<div class="movie-collection">
 	<%=erb :"filter/_filter_form"  %>
 	<% @movies.each do |movie| %>
-		<%=erb :"_modal", locals: {movie: movie} %>
-		<%=erb :"_cards", locals: {movie: movie} %>
+	<%=erb :"_modal", locals: {movie: movie} %>
+	<%=erb :"_cards", locals: {movie: movie} %>
 	<% end %>
 
-	<button>SHOW MORE</button>
+	<button id="show-more-btn">SHOW MORE</button>
+</div>
