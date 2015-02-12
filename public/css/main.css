@@ -83,6 +83,7 @@ footer {
 
 @media (max-width: 500px){
 	.navbar-brand{
+		color:black;
 		display: block;
 	}
 	.row{
