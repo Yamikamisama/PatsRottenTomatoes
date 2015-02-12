@@ -6,7 +6,12 @@
 				<h4><%= movie.title %></h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				<p>
-					<a data-toggle="modal" href="#myModal<%= movie.id %>"><h5>More Info</h5></a>
+					<a data-toggle="modal" href="#myModal<%= movie.id %>">
+						<h5>More Info</h5>
+					</a>
+						<% if movie.favorite == true %>
+							<img class="tomato"src="/tomato_icon.png">
+						<% end %>
 				</p>
 			</div>
 		</div>
