@@ -52,7 +52,7 @@ tr:hover {
 #star {
     border: none;
 }
-.favorite_button {
+/*.favorite_button {
     background-color: black;
     color: white;
     padding: 1%;
@@ -72,7 +72,7 @@ tr:hover {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2em;
     border: 3px solid black;
-}
+}*/
 .red {
     color: rgb(255, 94, 94);
 }
