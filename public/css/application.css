@@ -1,10 +1,3 @@
-.container {
-    width: 20%;
-    display: inline-block;
-    float: left;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.2);
-}
 #wrapper {
     text-align: center;
 }
@@ -18,7 +11,7 @@ img {
 }
 h1 {
     font-size: 3em;
-    padding: 6.5% 0 2.5% 0;
+    text-align: center;
     font-family: 'Montserrat Subrayada', sans-serif;
     -webkit-text-fill-color: black;
     text-fill-color: red;
@@ -38,7 +31,6 @@ th {
 p {
     font-size: .8em;
     font-family: 'Source Sans Pro', sans-serif;
-    color: white;
 }
 body {
     background-image: url('../movie-bg.png');
@@ -50,8 +42,7 @@ td a, td a p, p a {
     text-decoration: none;
     width: 112px;
 }
-a:visited {
-    color: white;
+
 }
 tr:hover {
     background-color: rgb(63, 63, 63);
@@ -62,7 +53,7 @@ tr:hover {
 .favorite_button {
     background-color: black;
     color: white;
-    padding: 7%;
+    padding: 1%;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2em;
     border: 3px solid white;
@@ -84,8 +75,8 @@ tr:hover {
     color: rgb(171, 169, 169);
     padding: 0 1%;
 }
-#past_filters p a, #past_filters p a:visited {
-    color: white;
+#past_filters p a, #past_filters p a:visited , a{
+    color: black;
 }
 .spacer {
     padding: 0 1%;
@@ -96,4 +87,8 @@ tr:hover {
 }
 .filter_form table {
     margin: 0 auto;
+}
+
+.modal_movie_titles{
+  font-size: 2em;
 }
