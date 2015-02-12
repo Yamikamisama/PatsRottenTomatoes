@@ -17,6 +17,14 @@ footer {
 	display: inline-block;
 	margin: 0 -3% 0 2%;
 }
+.navbar-brand{
+	display: none;
+}
+
+/*.navbar-nav{
+	position: absolute;
+	margin: 0 13.5%;
+}*/
 
 .container{
 	width: 100%;
@@ -50,4 +58,25 @@ padding: 0;
 
 .thumbnail{
 	border: 5px solid #ddd;
+}
+
+
+@media (max-width: 800px){
+
+.row{
+	width: 45%;
+	display: inline-block;
+	margin: 0 -3% 0 2%;
+}
+}
+
+@media (max-width: 768px){
+	.navbar-brand{
+	display: block;
+}
+.row{
+	width: 95%;
+	display: inline-block;
+	margin: 0 -3% 0 2%;
+}
 }
