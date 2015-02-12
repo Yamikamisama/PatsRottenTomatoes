@@ -61,7 +61,7 @@ padding: 0;
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 860px){
 
 .row{
 	width: 45%;
@@ -70,7 +70,7 @@ padding: 0;
 }
 }
 
-@media (max-width: 768px){
+@media (max-width: 500px){
 	.navbar-brand{
 	display: block;
 }
