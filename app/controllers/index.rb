@@ -22,10 +22,10 @@ put '/:id' do |id|
 end
 
 #MOVIE SHOW PAGE
-get '/movie/:id' do |id|
-  @movie = Movie.find(id)
-  erb :single_movie
-end
+# get '/movie/:id' do |id|
+#   @movie = Movie.find(id)
+#   erb :single_movie
+# end
 
 #FAVORITE MOVIE SHOW PAGE
 get '/favorites/:id' do |id|
