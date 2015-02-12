@@ -82,8 +82,11 @@ footer {
 }
 
 @media (max-width: 500px){
+	.navbar-inverse .navbar-brand{
+		color: #000;
+		font-weight: 600;
+	}
 	.navbar-brand{
-		color:black;
 		display: block;
 	}
 	.row{
