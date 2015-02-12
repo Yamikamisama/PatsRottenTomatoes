@@ -7,16 +7,16 @@ get '/' do
 	if @user.movies.empty? || @user.movies_stale?
     @user.fetch_movies!
   end
-    @movies = @user.movies
-  	erb :index
+  @movies = @user.movies
+  erb :index
 end
 
 #UPDATE TO MOVIE FAVORITE BOOLEAN
 put '/:id' do |id|
-    if request.xhr?
-      @movie = Movie.find(id)
-      @movie.update!(params["movie"])
-    else
+  if request.xhr?
+    @movie = Movie.find(id)
+    @movie.update!(params["movie"])
+  else
     redirect '/'
   end
 end

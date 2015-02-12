@@ -1,30 +1,30 @@
 <div id="wrapper">
 	<%=erb :"filter/_filter_form"  %>
 	<h1>PATS FAVORITES</h1>
-<table>
-	<tr>
-		<th></th>
-		<th class="title">TITLE</th>
-		<th>SYNOPSIS</th>
-		<th>YEAR</th>
-		<th>RATING</th>
-		<th>RUNTIME</th>
-		<th>CRITICS SCORE</th>
-		<th>AUDIENCE SCORE</th>
-	<tr>
-	<% @movies.each do |movie| %>
-	<tr>
-		<% if movie.favorite == true %>
-		<td><img src="<%= movie.poster_thumbnail %>"></td>
-		<td><a class-"title" href="/movie/<%= movie.id %>"><p><%= movie.title %></p></a></td>
-		<td><p><%= movie.synopsis %></p></td>
-		<td><p><%= movie.mpaa_rating%></p></td>
-		<td><p><%= movie.year %></p></td>
-		<td><p><%= movie.runtime %></p></td>
-		<td><p><%= movie.critics_score %></p></td>
-		<td><p><%= movie.audience_score %></p></td>
-	<tr>
-		<% end %>
-	<% end %>
-</table>
-</div>
+	<table>
+		<tr>
+			<th></th>
+			<th class="title">TITLE</th>
+			<th>SYNOPSIS</th>
+			<th>YEAR</th>
+			<th>RATING</th>
+			<th>RUNTIME</th>
+			<th>CRITICS SCORE</th>
+			<th>AUDIENCE SCORE</th>
+			<tr>
+				<% @movies.each do |movie| %>
+				<tr>
+					<% if movie.favorite == true %>
+					<td><img src="<%= movie.poster_thumbnail %>"></td>
+					<td><a class-"title" href="/movie/<%= movie.id %>"><p><%= movie.title %></p></a></td>
+					<td><p><%= movie.synopsis %></p></td>
+					<td><p><%= movie.mpaa_rating%></p></td>
+					<td><p><%= movie.year %></p></td>
+					<td><p><%= movie.runtime %></p></td>
+					<td><p><%= movie.critics_score %></p></td>
+					<td><p><%= movie.audience_score %></p></td>
+					<tr>
+						<% end %>
+						<% end %>
+					</table>
+				</div>

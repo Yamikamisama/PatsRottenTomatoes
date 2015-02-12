@@ -1,15 +1,13 @@
-	<!-- Modal -->
-	<div class="modal fade" id="myModal<%= movie.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h4 class="modal-title"><a class="modal-movie-title" href="/movie/<%= movie.id %>"><%= movie.title %></a></h4>
-				</div>
-				<div class="modal-body">
-					<%= erb :"_modal_body", locals:{movie: movie} %>
-				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-	<!-- modal end -->
+<div class="modal fade" id="myModal<%= movie.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title"><a class="modal-movie-title" href="/movie/<%= movie.id %>"><%= movie.title %></a></h4>
+			</div>
+			<div class="modal-body">
+				<%= erb :"_modal_body", locals:{movie: movie} %>
+			</div>
+		</div>
+	</div>
+</div>

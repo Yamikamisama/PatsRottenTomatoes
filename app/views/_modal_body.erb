@@ -1,11 +1,11 @@
 <p><img align="left" src="<%= movie.poster_thumbnail %>">
-<span class="red">SYNOPSIS</span>: <%= movie.synopsis %>
+	<span class="red">SYNOPSIS</span>: <%= movie.synopsis %>
 </p>
 <p><span class="red">RELEASE DATE</span>: <%= movie.release_date %>
-<span class="red">RATING</span>: <%= movie.mpaa_rating%>
-<span class="red">RUNTIME</span>: <%= movie.runtime %>
-<span class="red">CRITICS SCORE</span>: <%= movie.critics_score %>
-<span class="red">AUDIENCE SCORE</span>: <%= movie.audience_score %>
+	<span class="red">RATING</span>: <%= movie.mpaa_rating%>
+	<span class="red">RUNTIME</span>: <%= movie.runtime %>
+	<span class="red">CRITICS SCORE</span>: <%= movie.critics_score %>
+	<span class="red">AUDIENCE SCORE</span>: <%= movie.audience_score %>
 </p>
 	<% if movie.favorite == true %>
 	<form class="unfav" action="/<%=movie.id%>" method='POST'>

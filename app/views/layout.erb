@@ -8,20 +8,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/application.css">
-    <link rel="stylesheet" type="text/css" href="/css/nav.css">
     <link rel="stylesheet" type="text/css" href="/css/spacer.css">
-  <title>PATS MOVIES</title>
+    <title>PATS MOVIES</title>
 </head>
 <body>
-   <%= erb :"_nav" %>
-        <header class="jumbotron hero-spacer">
-            <h1>PATS ROTTEN TOMATOES</h1>
-        </header>
-
+ <%= erb :"_nav" %>
+ <header class="jumbotron hero-spacer">
+    <h1>PATS ROTTEN TOMATOES</h1>
+</header>
 </div>
-  <%= yield %>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/js/application.js"></script>
+<%= yield %>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/application.js"></script>
 </body>
 </html>

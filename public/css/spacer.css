@@ -1,16 +1,16 @@
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 
 .hero-feature {
-		display: inline-block;
-    margin-bottom: 30px;
-    width: 90%;
+	display: inline-block;
+	margin-bottom: 30px;
+	width: 90%;
 }
 
 footer {
-    margin: 50px 0;
+	margin: 50px 0;
 }
 .row{
 	width: 25%;
@@ -21,19 +21,14 @@ footer {
 	display: none;
 }
 
-/*.navbar-nav{
-	position: absolute;
-	margin: 0 13.5%;
-}*/
-
 .container{
 	width: 100%;
 	text-align: center;
 }
 
 .jumbotron{
-padding: 0;
-background-color: white;
+	padding: 0;
+	background-color: white;
 }
 
 .modal-body img{
@@ -58,41 +53,41 @@ background-color: white;
 }
 
 .thumbnail {
-background-color: #E5E7E1;
-border: 5px solid #FF5E5E;
+	background-color: #E5E7E1;
+	border: 5px solid #FF5E5E;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-color: #000;
-font-weight: 600;
+	color: #000;
+	font-weight: 600;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-color: #fff;
-background-color: black;
+	color: #fff;
+	background-color: black;
 }
 .navbar-inverse {
-background-color: #FF5E5E;
-border-color: #080808;
-border-bottom: 3px solid black;
+	background-color: #FF5E5E;
+	border-color: #080808;
+	border-bottom: 3px solid black;
 }
 
 @media (max-width: 860px){
 
-.row{
-	width: 45%;
-	display: inline-block;
-	margin: 0 -3% 0 2%;
-}
+	.row{
+		width: 45%;
+		display: inline-block;
+		margin: 0 -3% 0 2%;
+	}
 }
 
 @media (max-width: 500px){
 	.navbar-brand{
-	display: block;
-}
-.row{
-	width: 95%;
-	display: inline-block;
-	margin: 0 -3% 0 2%;
-}
+		display: block;
+	}
+	.row{
+		width: 95%;
+		display: inline-block;
+		margin: 0 -3% 0 2%;
+	}
 }
