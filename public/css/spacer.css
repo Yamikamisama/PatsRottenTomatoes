@@ -1,0 +1,26 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+		display: inline-block;
+    margin-bottom: 30px;
+    width: 90%;
+}
+
+footer {
+    margin: 50px 0;
+}
+.row{
+	width: 25%;
+	display: inline-block;
+}
+
+.container{
+	width: 100%;
+	text-align: center;
+}
