@@ -33,9 +33,11 @@ p {
     font-family: 'Source Sans Pro', sans-serif;
 }
 body {
-   /* background-image: url('../movie-bg.png');
+    background-image: url('../tomatoes.jpg');
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size:contain;
+    background-position:center;
+    background-attachment: fixed;
 }
 td a, td a p, p a {
     color: rgb(123, 123, 123);
@@ -87,7 +89,8 @@ tr:hover {
 .filter_form table {
     margin: 0 auto;
 }
-
-.modal_movie_titles{
-  font-size: 2em;
+.tomato{
+    margin: 0;
+    float: right;
+    border: none;
 }
