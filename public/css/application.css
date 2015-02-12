@@ -71,9 +71,8 @@ tr:hover {
     font-size: 1.2em;
     border: 3px solid black;
 }
-.grey {
-    color: rgb(171, 169, 169);
-    padding: 0 1%;
+.red {
+    color: rgb(255, 94, 94);
 }
 #past_filters p a, #past_filters p a:visited , a{
     color: black;
