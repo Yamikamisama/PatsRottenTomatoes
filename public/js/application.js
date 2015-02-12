@@ -17,7 +17,7 @@ $(document).ready(function() {
             data: $form.serialize()
         }).done(function(response) {
             if ($form.children('button').hasClass("favorite_button") === true) {
-                $form.parent('td').append('<form class="unfav" action="' + $form.attr("action") + '" method="POST">' + '<input type="hidden" name="_method" value="PUT">' + '<input type="hidden" name="movie[favorite]" value="false">' + '<button class="favorited_button" type="submit">Favorited</button>' + '</form>');
+                $form.parent('div').append('<form class="unfav" action="' + $form.attr("action") + '" method="POST">' + '<input type="hidden" name="_method" value="PUT">' + '<input type="hidden" name="movie[favorite]" value="false">' + '<button class="favorited_button" type="submit">Favorited</button>' + '</form>');
                 $form.remove();
             };
         });
@@ -35,7 +35,7 @@ $(document).ready(function() {
             data: $form.serialize()
         }).done(function(response) {
             if ($form.children('button').hasClass("favorited_button") === true) {
-                $form.parent('td').append('<form class="fav" action="' + $form.attr("action") + '" method="POST">' + '<input type="hidden" name="_method" value="PUT">' + '<input type="hidden" name="movie[favorite]" value="false">' + '<button class="favorite_button" type="submit">Favorite</button>' + '</form>');
+                $form.parent('div').append('<form class="fav" action="' + $form.attr("action") + '" method="POST">' + '<input type="hidden" name="_method" value="PUT">' + '<input type="hidden" name="movie[favorite]" value="false">' + '<button class="favorite_button" type="submit">Favorite</button>' + '</form>');
                 $form.remove();
             };
         });
