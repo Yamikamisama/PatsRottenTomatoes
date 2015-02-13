@@ -1,7 +1,7 @@
 #Pats Rotten Tomatoes
 
 ###Description
-This is an app that pull all the upcoming movies from the Rotten Tomatoes Website using the Rotten Tomatoes API and allows you to sort and favorite them in various ways.  The app is great for anybody who wants a quick list of thats comming out soon!  Click here to check it out: [Pats Rotten Tomatoes](http://pats-rotten-tomatoes.herokuapp.com/)
+This is an app that pulls upcoming movies from the Rotten Tomatoes Website using the Rotten Tomatoes API and allows you to sort and favorite them in various ways.  The app is great for anybody who wants a quick list movies comming out soon!  Click here to check it out: [Pats Rotten Tomatoes](http://pats-rotten-tomatoes.herokuapp.com/)
 
 ### Computer View
 ![](comp.png)
