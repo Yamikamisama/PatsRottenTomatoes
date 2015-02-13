@@ -31,6 +31,11 @@ footer {
 	background-color: transparent;
 }
 
+.jumbotron p{
+	font-size: .8em;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
 .modal_movie_titles{
   font-size: 2em;
 }

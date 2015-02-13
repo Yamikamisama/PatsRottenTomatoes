@@ -4,7 +4,8 @@
 			<img src="<%= movie.poster_thumbnail %>">
 			<div class="caption">
 				<h4><%= movie.title %></h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<% chars = movie.synopsis %>
+				<p><%= chars[0..100] + "..." %></p>
 				<p>
 					<a data-toggle="modal" href="#myModal<%= movie.id %>">
 						<h5>More Info</h5>
