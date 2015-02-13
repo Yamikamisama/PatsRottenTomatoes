@@ -23,7 +23,7 @@ $(document).ready(function() {
     });
 
     // AJAX CALL TO ADD TO FAVORITES
-    $(".fav").submit(function(event) {
+    $(".fav").on('submit', (function(event) {
         event.preventDefault();
         $form = $(event.target);
         console.log($form)
@@ -34,14 +34,20 @@ $(document).ready(function() {
             data: $form.serialize()
         }).done(function(response) {
             if ($form.children('button').hasClass("favorite_button") === true) {
-                $form.parent('div').append('<form class="unfav" action="' + $form.attr("action") + '" method="POST">' + '<input type="hidden" name="_method" value="PUT">' + '<input type="hidden" name="movie[favorite]" value="false">' + '<button class="favorited_button" type="submit">Favorited</button>' + '</form>');
+                $form.parent('div').append('<form class="unfav" action=' +'"'+ $form.attr('action') +'"'+ '                           method="POST">'
+                                            + '<input type="hidden" name="_method" value="PUT">'
+                                            + '<input type="hidden" name="movie[favorite]" value="false">'
+                                            + '<button class="favorited_button" type="submit" style="border: 0; background: transparent">'
+                                            + '<img class="tomato"src="/tomato_icon.png">'
+                                            + '</button>'
+                                            + '</form>');
                 $form.remove();
             };
         });
-    });
+    }));
 
     // AJAX CALL TO REMOVE FROM FAVORITES
-    $(".unfav").submit(function(event) {
+    $(".unfav").on('submit', (function(event) {
         event.preventDefault();
         $form = $(event.target);
         console.log($form)
@@ -52,11 +58,17 @@ $(document).ready(function() {
             data: $form.serialize()
         }).done(function(response) {
             if ($form.children('button').hasClass("favorited_button") === true) {
-                $form.parent('div').append('<form class="fav" action="' + $form.attr("action") + '" method="POST">' + '<input type="hidden" name="_method" value="PUT">' + '<input type="hidden" name="movie[favorite]" value="false">' + '<button class="favorite_button" type="submit">Favorite</button>' + '</form>');
+                $form.parent('div').append('<form class="fav" action=' +'"'+ $form.attr('action') +'"'+ '                           method="POST">'
+                                            + '<input type="hidden" name="_method" value="PUT">'
+                                            + '<input type="hidden" name="movie[favorite]" value="false">'
+                                            + '<button class="favorited_button" type="submit" style="border: 0; background: transparent">'
+                                            + '<img class="tomato"src="/non_tomato_icon.png">'
+                                            + '</button>'
+                                            + '</form>');
                 $form.remove();
             };
         });
-    });
+    }));
 
 
 
