@@ -40,12 +40,12 @@ $(document).ready(function() {
         }).done(function(response) {
             if ($form.children('button').hasClass("favorite_button") === true) {
                 $form.parent('div').append('<form class="unfav" action=' +'"'+ $form.attr('action') +'"'+ '                           method="POST">'
-                                            + '<input type="hidden" name="_method" value="PUT">'
-                                            + '<input type="hidden" name="movie[favorite]" value="false">'
-                                            + '<button class="favorited_button" type="submit" style="border: 0; background: transparent">'
-                                            + '<img class="tomato"src="/tomato_icon.png">'
-                                            + '</button>'
-                                            + '</form>');
+                    + '<input type="hidden" name="_method" value="PUT">'
+                    + '<input type="hidden" name="movie[favorite]" value="false">'
+                    + '<button class="favorited_button" type="submit" style="border: 0; background: transparent">'
+                    + '<img class="tomato"src="/tomato_icon.png">'
+                    + '</button>'
+                    + '</form>');
                 $form.remove();
             };
         });
@@ -64,12 +64,12 @@ $(document).ready(function() {
         }).done(function(response) {
             if ($form.children('button').hasClass("favorited_button") === true) {
                 $form.parent('div').append('<form class="fav" action=' +'"'+ $form.attr('action') +'"'+ '                           method="POST">'
-                                            + '<input type="hidden" name="_method" value="PUT">'
-                                            + '<input type="hidden" name="movie[favorite]" value="false">'
-                                            + '<button class="favorited_button" type="submit" style="border: 0; background: transparent">'
-                                            + '<img class="tomato"src="/non_tomato_icon.png">'
-                                            + '</button>'
-                                            + '</form>');
+                    + '<input type="hidden" name="_method" value="PUT">'
+                    + '<input type="hidden" name="movie[favorite]" value="false">'
+                    + '<button class="favorited_button" type="submit" style="border: 0; background: transparent">'
+                    + '<img class="tomato"src="/non_tomato_icon.png">'
+                    + '</button>'
+                    + '</form>');
                 $form.remove();
             };
         });

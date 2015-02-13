@@ -1,8 +1,8 @@
 <div class="movie-collection">
 	<div class="movie-holder">
-	<% @movies.each do |movie| %>
-	<%=erb :"_modal", locals: {movie: movie} %>
-	<%=erb :"_cards", locals: {movie: movie} %>
-	<% end %>
+		<% @movies.each do |movie| %>
+		<%=erb :"_modal", locals: {movie: movie} %>
+		<%=erb :"_cards", locals: {movie: movie} %>
+		<% end %>
 	</div>
 </div>
