@@ -5,7 +5,35 @@ $(document).ready(function() {
         $('.filter_form').toggle();
     });
 
+    //AJAX CALL TO APPEND FAVORITES TO PAGE
+    $("#fav_nav_btn").click(function(event){
+        event.preventDefault();
+        $.ajax({
+            url: '/favorites',
+            type: 'GET',
+        })
+        .done(function(response) {
+            var $movies = $(response)[23]
+            $('.movie-collection').fadeOut('slow');
+            $('.movie-collection').remove();
+            $('.jumbotron').append($movies).fadeIn('slow');
+        });
+    });
 
+    //AJAX CALL TO APPEND CRITICS RATING TO PAGE
+    $("#fav_nav_btn").click(function(event){
+        event.preventDefault();
+        $.ajax({
+            url: '/favorites',
+            type: 'GET',
+        })
+        .done(function(response) {
+            var $movies = $(response)[23]
+            $('.movie-collection').fadeOut('slow');
+            $('.movie-collection').remove();
+            $('.jumbotron').append($movies).fadeIn('slow');
+        });
+    });
 
     // AJAX CALL TO ADD TO FAVORITES
     $(".fav").submit(function(event) {
