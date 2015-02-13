@@ -28,7 +28,7 @@ $(document).ready(function() {
     });
 
     // AJAX CALL TO ADD TO FAVORITES
-    $(".fav").on('submit', (function(event) {
+    $(".modal-body").on('submit', (function(event) {
         event.preventDefault();
         $form = $(event.target);
         console.log($form)
@@ -52,7 +52,7 @@ $(document).ready(function() {
     }));
 
     // AJAX CALL TO REMOVE FROM FAVORITES
-    $(".unfav").on('submit', (function(event) {
+    $(".modal-body").on('submit', (function(event) {
         event.preventDefault();
         $form = $(event.target);
         console.log($form)
