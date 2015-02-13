@@ -11,12 +11,18 @@
 	<form class="unfav" action="/<%=movie.id%>" method='POST'>
 		<input type="hidden" name="_method" value="PUT">
 		<input type="hidden" name="movie[favorite]" value="false">
-		<a class="favorited_button" type="submit"><img class="tomato"src="/tomato_icon.png"></a>
+		<button class="favorited_button" type="submit" style="border: 0; background: transparent">
+    	<img class="tomato"src="/tomato_icon.png">
+		</button>
 	</form>
+
 	<% else %>
+
 	<form class="fav" action="/<%=movie.id%>" method='POST'>
 		<input type="hidden" name="_method" value="PUT">
 		<input type="hidden" name="movie[favorite]" value="true">
-		<a class="favorite_button" type="submit"><img class="tomato"src="/non_tomato_icon.png"></a>
+		<button class="favorite_button" type="submit" style="border: 0; background: transparent">
+    	<img class="tomato"src="/non_tomato_icon.png">
+		</button>
 	</form>
 	<% end %>
