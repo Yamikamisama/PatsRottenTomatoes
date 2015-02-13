@@ -1,9 +1,14 @@
 $(document).ready(function() {
 
-    // FITLTER FORM TOGGLE
-    $('#filter').click(function() {
-        $('.filter_form').toggle();
-    });
+    // SHOW MORE SKELETON (will load more movies when there are more than 12)
+    // $.ajax({
+    //     url: '/path/to/file',
+    //     type: 'default GET (Other values: POST)',
+    //     data: {param1: 'value1'},
+    // })
+    // .done(function() {
+    //     console.log("success");
+    // });
 
     //AJAX CALL TO APPEND ALL NAVS
     $(".navbar-nav").on('click', 'a', function(event){
