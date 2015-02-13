@@ -71,10 +71,12 @@ footer {
 	font-weight: 600;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:active{
 	color: #fff;
 	background-color: black;
 }
+
 .navbar-inverse {
 	background-color: #FF5E5E;
 	border-color: #080808;

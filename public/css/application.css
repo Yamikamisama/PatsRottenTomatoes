@@ -49,30 +49,6 @@ td a, td a p, p a {
 tr:hover {
     background-color: rgb(63, 63, 63);
 }
-#star {
-    border: none;
-}
-/*.favorite_button {
-    background-color: black;
-    color: white;
-    padding: 1%;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.2em;
-    border: 3px solid white;
-}
-.favorite_button:hover {
-    color: black;
-    background-color: gold;
-    transition: background-color 300ms linear;
-}
-.favorited_button {
-    background-color: gold;
-    color: black;
-    padding: 1%;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.2em;
-    border: 3px solid black;
-}*/
 
 #show-more-btn{
     color: #000;
@@ -90,9 +66,7 @@ tr:hover {
 .red {
     color: rgb(255, 94, 94);
 }
-#past_filters p a, #past_filters p a:visited , a{
-    color: black;
-}
+
 .spacer {
     padding: 0 1%;
 }

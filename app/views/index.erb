@@ -1,6 +1,5 @@
 <div class="movie-collection">
 	<div class="movie-holder">
-	<%=erb :"filter/_filter_form"  %>
 	<% @movies.each do |movie| %>
 	<%=erb :"_modal", locals: {movie: movie} %>
 	<%=erb :"_cards", locals: {movie: movie} %>
