@@ -5,6 +5,8 @@ $(document).ready(function() {
         $('.filter_form').toggle();
     });
 
+
+
     // AJAX CALL TO ADD TO FAVORITES
     $(".fav").submit(function(event) {
         event.preventDefault();
