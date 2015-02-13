@@ -5,33 +5,20 @@ $(document).ready(function() {
         $('.filter_form').toggle();
     });
 
-    //AJAX CALL TO APPEND FAVORITES TO PAGE
-    $("#fav_nav_btn").click(function(event){
+    //AJAX CALL TO APPEND ALL NAVS
+    $(".navbar-nav").on('click', 'a', function(event){
         event.preventDefault();
+        var $info = $(event.target)
+        console.log($info)
         $.ajax({
-            url: '/favorites',
+            url: $info.attr("href"),
             type: 'GET',
         })
         .done(function(response) {
             var $movies = $(response)[23]
             $('.movie-collection').fadeOut('slow');
             $('.movie-collection').remove();
-            $('.jumbotron').append($movies).hide().fadeIn('slow');
-        });
-    });
-
-    //AJAX CALL TO APPEND CRITICS RATING TO PAGE
-    $("#critic_nav_btn").click(function(event){
-        event.preventDefault();
-        $.ajax({
-            url: '/critic-rating',
-            type: 'GET',
-        })
-        .done(function(response) {
-            var $movies = $(response)[23]
-            $('.movie-collection').fadeOut('slow');
-            $('.movie-collection').remove();
-            $('.jumbotron').append($movies).hide().fadeIn('slow');
+            $('.jumbotron').append($movies);
         });
     });
 
