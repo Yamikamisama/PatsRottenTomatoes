@@ -76,10 +76,14 @@ tr:hover {
 
 #show-more-btn{
     color: #000;
-    border-radius: 6px;
     border: 2px solid rgb(255, 94, 94);
-    background-color: rgb(255, 94, 94);
+    background-color: rgb(229, 231, 225);;
     font-weight: 600;
+}
+#show-more-btn:hover{
+    background-color: black;
+    color: white;
+    border-color: black;r
 }
 
 .red {
