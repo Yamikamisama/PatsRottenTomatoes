@@ -1,15 +1,5 @@
 $(document).ready(function() {
 
-    // SHOW MORE SKELETON (will load more movies when there are more than 12)
-    // $.ajax({
-    //     url: '/path/to/file',
-    //     type: 'default GET (Other values: POST)',
-    //     data: {param1: 'value1'},
-    // })
-    // .done(function() {
-    //     console.log("success");
-    // });
-
     //AJAX CALL TO APPEND ALL NAVS
     $(".navbar-nav").on('click', 'a', function(event){
         event.preventDefault();
@@ -47,6 +37,8 @@ $(document).ready(function() {
                     + '</button>'
                     + '</form>');
                 $form.remove();
+                //THIS IS WHERE YOU WILL APPEND THE TOMATO IMAGE FROM THE CARD
+                // $('.caption').append('<img class="tomato" src="/tomato_icon.png">')
             };
         });
     }));
@@ -71,10 +63,21 @@ $(document).ready(function() {
                     + '</button>'
                     + '</form>');
                 $form.remove();
+                //THIS IS WHERE YOU WILL REMOVE THE TOMATO IMAGE FROM THE CARD
+                // $('.caption').remove('<img class="tomato" src="/tomato_icon.png">')
             };
         });
     }));
 
+    // SHOW MORE SKELETON (will load more movies when there are more than 12)
+    // $.ajax({
+    //     url: '/path/to/file',
+    //     type: 'default GET (Other values: POST)',
+    //     data: {param1: 'value1'},
+    // })
+    // .done(function() {
+    //     console.log("success");
+    // });
 
 
 });
