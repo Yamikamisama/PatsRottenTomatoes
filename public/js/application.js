@@ -16,22 +16,22 @@ $(document).ready(function() {
             var $movies = $(response)[23]
             $('.movie-collection').fadeOut('slow');
             $('.movie-collection').remove();
-            $('.jumbotron').append($movies).fadeIn('slow');
+            $('.jumbotron').append($movies).hide().fadeIn('slow');
         });
     });
 
     //AJAX CALL TO APPEND CRITICS RATING TO PAGE
-    $("#fav_nav_btn").click(function(event){
+    $("#critic_nav_btn").click(function(event){
         event.preventDefault();
         $.ajax({
-            url: '/favorites',
+            url: '/critic-rating',
             type: 'GET',
         })
         .done(function(response) {
             var $movies = $(response)[23]
             $('.movie-collection').fadeOut('slow');
             $('.movie-collection').remove();
-            $('.jumbotron').append($movies).fadeIn('slow');
+            $('.jumbotron').append($movies).hide().fadeIn('slow');
         });
     });
 
